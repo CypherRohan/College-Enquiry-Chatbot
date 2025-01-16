@@ -36,9 +36,6 @@ def send():
         root.quit()
     elif not user_input:
         chat_window.insert(tk.END, "Chatbot: Enter a valid question.\n")
-    elif "Who is the owner of the college" in user_input.lower() or "Who is the founder of the college" in user_input.lower():
-        
-        chat_window.insert(tk.END, "Chatbot: Dr. Kamal Ghansala\n")
     else:
         chat_window.insert(tk.END, "You: " + user_input + "\n")
         
